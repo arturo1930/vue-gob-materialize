@@ -49,7 +49,7 @@ export default {
 <style>
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 .page-footer {
-  border: solid 2px purple;
+  /* border: solid 2px purple;*/
   background-color: white !important;
   background-image: url("https://framework-gb.cdn.gob.mx/landing/img/fondofooter.svg") !important;
   background-size: cover;

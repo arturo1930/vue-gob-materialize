@@ -89,9 +89,43 @@ export default {
       ]
     };
   },
-  created() {
+  beforeCreate() {
     if (this.convocatoria === null) {
       this.$router.push("/");
+    }
+  },
+  created() {
+    //localStorage.clear();
+    console.log("created");
+    console.log("test" + localStorage.getItem("test"));
+    console.log("convocatoria" + localStorage.getItem("convocatoria"));
+    if (localStorage.getItem("convocatoria") == null) {
+      console.log("created IF");
+      var convocatoria = {
+        modalidad: {
+          modalidad: 1,
+          investigacionMultidiciplinaria: false,
+          areaConocomiento: "",
+          subDiciplina: "",
+          palabraClave1: "1",
+          palabraClave2: "2",
+          palabraClave3: "3",
+          palabraClave4: "4",
+          palabraClave5: "5",
+          tituloPropuesta: "t",
+          resumenEjecutivo: "re"
+        },
+        registrarDatosPropuesta: null,
+        registrarSujetoApoyo: null,
+        registrarCoResponsables: null,
+        registrarParticipantes: null,
+        registrarEtapas: null,
+        crearDesgloseFinanciero: null,
+        emviarSolicitud: null
+      };
+      console.log("LocalSTORAGESSS");
+      localStorage.setItem("convocatoria", JSON.stringify(convocatoria));
+      console.log(localStorage.getItem("convocatoria"));
     }
   },
   mounted() {
