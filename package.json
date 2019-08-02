@@ -16,6 +16,7 @@
     "echarts": "^4.2.1",
     "echarts-gl": "^1.1.1",
     "materialize-css": "^1.0.0-rc.2",
+    "npm-module-button": "git+https://github.com/arturo1930/vue-npm-module-button.git",
     "register-service-worker": "^1.6.2",
     "vue": "^2.6.10",
     "vue-echarts": "^4.0.3",

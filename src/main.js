@@ -4,6 +4,10 @@ import router from "./router";
 import store from "./store";
 import ECharts from "vue-echarts";
 
+import NiceHandSomeButton from "npm-module-button";
+
+Vue.use(NiceHandSomeButton);
+
 import "./registerServiceWorker";
 
 // materializeCss
