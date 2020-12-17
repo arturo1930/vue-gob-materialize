@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "core-js": "^2.6.5",
-    "datatables.net": "^1.10.19",
+    "datatables.net": "^1.10.22",
     "datatables.net-buttons": "^1.5.6",
     "datatables.net-buttons-dt": "^1.5.6",
     "datatables.net-dt": "^1.10.19",
